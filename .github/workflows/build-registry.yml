@@ -38,13 +38,13 @@ jobs:
 
       - name: Write GitHub App Private Key
         run: |
-          echo "${{ secrets.GITHUB_APP_PRIVATE_KEY }}" > github-app.pem
+          echo "${{ secrets.ADR_APP_PRIVATE_KEY }}" > github-app.pem
           chmod 600 github-app.pem
 
       - name: Generate Site
         env:
-          GITHUB_APP_ID: ${{ secrets.GITHUB_APP_ID }}
-          GITHUB_APP_INSTALLATION_ID: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
+          GITHUB_APP_ID: ${{ secrets.ADR_APP_ID }}
+          GITHUB_APP_INSTALLATION_ID: ${{ secrets.ADR_APP_INSTALLATION_ID }}
           GITHUB_APP_PRIVATE_KEY_PATH: github-app.pem
         run: dotnet run --project src/AdrRegistry.Generator --configuration Release
 
