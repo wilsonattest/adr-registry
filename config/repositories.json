@@ -1,14 +1,13 @@
 {
-  "organization": "your-org",
+  "organization": "wilsonattest",
   "discoverAll": true,
   "adrPath": "docs/adr",
   "exclude": [
-    "your-org/archived-*",
-    "your-org/*-deprecated"
+    "wilsonattest/adr-registry"
   ],
   "include": [],
   "siteTitle": "Architecture Decision Records",
-  "siteDescription": "Cross-project ADR registry for your-org",
+  "siteDescription": "Cross-project ADR registry for wilsonattest",
   "baseUrl": "",
   "outputPath": "docs"
 }
