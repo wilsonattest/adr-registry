@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/adrs/">All ADRs</a></li>
+                    <li><a href="/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="dashboard">
+                <h1>Architecture Decision Records</h1>
+                <p class="lead">Cross-project ADR registry for wilsonattest</p>
+            
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">392</div>
+                        <div class="stat-label">Total ADRs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Repositories</div>
+                    </div>
+                    
+                            <div class="stat-card stat-proposed">
+                                <div class="stat-value">91</div>
+                                <div class="stat-label">Proposed</div>
+                            </div>
+                            
+                            <div class="stat-card stat-accepted">
+                                <div class="stat-value">220</div>
+                                <div class="stat-label">Accepted</div>
+                            </div>
+                            
+                            <div class="stat-card stat-superseded">
+                                <div class="stat-value">56</div>
+                                <div class="stat-label">Superseded</div>
+                            </div>
+                            
+                            <div class="stat-card stat-deprecated">
+                                <div class="stat-value">25</div>
+                                <div class="stat-label">Deprecated</div>
+                            </div>
+                            
+                </div>
+            
+                <section class="section">
+                    <h2>Quick Search</h2>
+                    <div id="search"></div>
+                </section>
+            
+                <section class="section">
+                    <h2>Recent Decisions</h2>
+                    
+                            <div class="adr-list">
+                                
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            <span class="adr-date">2026-01-07</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0062.html">Adopt Docker for gdpr-compliance</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/user-management.html">user-management</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0062</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            <span class="adr-date">2026-01-01</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0051.html">Implement Terraform for real-time-analytics</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/analytics-platform.html">analytics-platform</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0051</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            <span class="adr-date">2025-12-30</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0064.html">Use TypeScript for payment-reconciliation</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/payment-service.html">payment-service</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0064</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            <span class="adr-date">2025-12-29</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/inventory-system_0083.html">Deploy MongoDB for barcode-scanning</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/inventory-system.html">inventory-system</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0083</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            <span class="adr-date">2025-12-27</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0071.html">Integrate TypeScript for pci-compliance</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/payment-service.html">payment-service</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0071</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            <span class="adr-date">2025-12-26</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/inventory-system_0051.html">Use React for inventory-valuation</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/inventory-system.html">inventory-system</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0051</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            <span class="adr-date">2025-12-22</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0005.html">Switch-to Azure-Functions for refund-handling</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/payment-service.html">payment-service</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0005</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            <span class="adr-date">2025-12-20</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/inventory-system_0035.html">Integrate HashiCorp-Vault for cycle-counting</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/inventory-system.html">inventory-system</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0035</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            <span class="adr-date">2025-12-19</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0033.html">Switch-to Vue.js for real-time-analytics</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/analytics-platform.html">analytics-platform</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0033</span>
+                                        </div>
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            <span class="adr-date">2025-12-17</span>
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0043.html">Adopt Vue.js for visualization-library</a>
+                                        </h3>
+                                        <div class="adr-meta">
+                                            <span class="adr-repo">
+                                                <a href="/repos/analytics-platform.html">analytics-platform</a>
+                                            </span>
+                                            <span class="adr-number">ADR-0043</span>
+                                        </div>
+                                    </article>
+                                    
+                            </div>
+                            
+                </section>
+            
+                <section class="section">
+                    <h2>Repositories with ADRs</h2>
+                    <div class="repo-grid">
+                        
+                                    <a href="/repos/analytics-platform.html" class="repo-card">
+                                        <h3>analytics-platform</h3>
+                                        <span class="repo-count">93 ADRs</span>
+                                    </a>
+                                    
+                                    <a href="/repos/inventory-system.html" class="repo-card">
+                                        <h3>inventory-system</h3>
+                                        <span class="repo-count">89 ADRs</span>
+                                    </a>
+                                    
+                                    <a href="/repos/notification-hub.html" class="repo-card">
+                                        <h3>notification-hub</h3>
+                                        <span class="repo-count">54 ADRs</span>
+                                    </a>
+                                    
+                                    <a href="/repos/payment-service.html" class="repo-card">
+                                        <h3>payment-service</h3>
+                                        <span class="repo-count">71 ADRs</span>
+                                    </a>
+                                    
+                                    <a href="/repos/user-management.html" class="repo-card">
+                                        <h3>user-management</h3>
+                                        <span class="repo-count">85 ADRs</span>
+                                    </a>
+                                    
+                    </div>
+                </section>
+            </div>
+            
+            <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                new PagefindUI({
+                    element: "#search",
+                    showSubResults: true,
+                    showImages: false,
+                    excerptLength: 30
+                });
+            });
+            </script>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/search/pagefind-ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

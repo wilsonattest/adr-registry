@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment-service - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/adrs/">All ADRs</a></li>
+                    <li><a href="/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="repository-page">
+                <nav class="breadcrumb">
+                    <a href="/">Home</a> /
+                    <a href="/repos/">Repositories</a> /
+                    <span>payment-service</span>
+                </nav>
+            
+                <header class="repo-header">
+                    <h1>payment-service</h1>
+                    <p class="lead">71 Architecture Decision Records</p>
+                    <a href="" class="btn btn-secondary" target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </header>
+            
+                <section class="section">
+                    <h2>ADR Status</h2>
+                    <div class="stats-grid stats-small">
+                        
+                                    <div class="stat-card stat-accepted">
+                                        <div class="stat-value">42</div>
+                                        <div class="stat-label">Accepted</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-proposed">
+                                        <div class="stat-value">17</div>
+                                        <div class="stat-label">Proposed</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-superseded">
+                                        <div class="stat-value">11</div>
+                                        <div class="stat-label">Superseded</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-deprecated">
+                                        <div class="stat-value">1</div>
+                                        <div class="stat-label">Deprecated</div>
+                                    </div>
+                                    
+                    </div>
+                </section>
+            
+                <section class="section">
+                    <h2>Decisions</h2>
+                    <div class="adr-list">
+                        
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0001.html">ADR-0001: Deploy RabbitMQ for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0002.html">ADR-0002: Use OpenID-Connect for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-04-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0003.html">ADR-0003: Migrate-to OAuth-2.0 for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0004.html">ADR-0004: Choose PostgreSQL for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-12-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0005.html">ADR-0005: Switch-to Azure-Functions for refund-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our refund-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0006.html">ADR-0006: Adopt gRPC for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-02-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0007.html">ADR-0007: Adopt Redis for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-05-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0008.html">ADR-0008: Choose gRPC for transaction-processing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our transaction-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0009.html">ADR-0009: Use WebSockets for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-08-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0010.html">ADR-0010: Adopt PostgreSQL for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-04-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0011.html">ADR-0011: Integrate MongoDB for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0012.html">ADR-0012: Choose DotNet-Core for payment-methods</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-methods implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-10-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0013.html">ADR-0013: Standardize-on GitHub-Actions for refund-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our refund-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-02-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0014.html">ADR-0014: Migrate-to gRPC for pci-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our pci-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0015.html">ADR-0015: Implement Node.js for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0016.html">ADR-0016: Migrate-to Node.js for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0017.html">ADR-0017: Adopt OAuth-2.0 for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-01-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0018.html">ADR-0018: Use GitHub-Actions for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-12-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0019.html">ADR-0019: Implement JWT for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0020.html">ADR-0020: Standardize-on RabbitMQ for pci-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our pci-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-02-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0021.html">ADR-0021: Switch-to REST-API for payment-methods</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-methods implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-02-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0022.html">ADR-0022: Migrate-to RabbitMQ for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-06-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0023.html">ADR-0023: Migrate-to WebSockets for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-11-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0024.html">ADR-0024: Implement Terraform for chargeback-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our chargeback-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-11-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0025.html">ADR-0025: Integrate gRPC for pci-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our pci-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-11-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0026.html">ADR-0026: Implement OpenID-Connect for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-02-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0027.html">ADR-0027: Switch-to RabbitMQ for invoice-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our invoice-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-04-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0028.html">ADR-0028: Switch-to gRPC for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0029.html">ADR-0029: Choose OpenID-Connect for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-05-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0030.html">ADR-0030: Integrate REST-API for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0031.html">ADR-0031: Migrate-to DotNet-Core for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-03-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0032.html">ADR-0032: Implement GraphQL for pci-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our pci-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-02-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0033.html">ADR-0033: Choose DotNet-Core for fraud-detection</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our fraud-detection implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-09-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0034.html">ADR-0034: Choose gRPC for transaction-processing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our transaction-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-08-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0035.html">ADR-0035: Deploy Redis for refund-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our refund-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0036.html">ADR-0036: Migrate-to GitHub-Actions for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-01-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0037.html">ADR-0037: Integrate Kubernetes for fraud-detection</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our fraud-detection implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-10-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0038.html">ADR-0038: Implement MongoDB for invoice-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our invoice-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-12-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0039.html">ADR-0039: Standardize-on Azure-Functions for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-05-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0040.html">ADR-0040: Deploy DotNet-Core for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-11-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0041.html">ADR-0041: Use JWT for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-09-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0042.html">ADR-0042: Implement HashiCorp-Vault for refund-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our refund-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0043.html">ADR-0043: Standardize-on Python for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0044.html">ADR-0044: Adopt Docker for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-01-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0045.html">ADR-0045: Integrate Python for invoice-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our invoice-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-08-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0046.html">ADR-0046: Standardize-on Elasticsearch for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-01-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0047.html">ADR-0047: Use React for transaction-processing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our transaction-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0048.html">ADR-0048: Standardize-on OAuth-2.0 for chargeback-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our chargeback-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0049.html">ADR-0049: Deploy Vue.js for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-05-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0050.html">ADR-0050: Choose Azure-Functions for recurring-billing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our recurring-billing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-01-19</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0051.html">ADR-0051: Integrate Node.js for fraud-detection</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our fraud-detection implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0052.html">ADR-0052: Migrate-to Python for chargeback-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our chargeback-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-01-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0053.html">ADR-0053: Implement PostgreSQL for chargeback-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our chargeback-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-12-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0054.html">ADR-0054: Switch-to REST-API for fraud-detection</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our fraud-detection implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-08-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0055.html">ADR-0055: Use GraphQL for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0056.html">ADR-0056: Implement MongoDB for payment-methods</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-methods implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0057.html">ADR-0057: Adopt GitHub-Actions for payment-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0058.html">ADR-0058: Adopt Elasticsearch for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0059.html">ADR-0059: Integrate Redis for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-04-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0060.html">ADR-0060: Adopt gRPC for transaction-processing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our transaction-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-11-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0061.html">ADR-0061: Deploy WebSockets for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-05-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0062.html">ADR-0062: Migrate-to Python for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0063.html">ADR-0063: Deploy PostgreSQL for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-12-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0064.html">ADR-0064: Use TypeScript for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0065.html">ADR-0065: Implement Terraform for payment-reconciliation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our payment-reconciliation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-03-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0066.html">ADR-0066: Adopt MongoDB for invoice-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our invoice-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0067.html">ADR-0067: Switch-to gRPC for invoice-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our invoice-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-04-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0068.html">ADR-0068: Integrate JWT for tax-calculation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our tax-calculation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-01-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0069.html">ADR-0069: Implement RabbitMQ for currency-conversion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our currency-conversion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-10-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0070.html">ADR-0070: Implement Kubernetes for transaction-processing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our transaction-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-12-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/payment-service_0071.html">ADR-0071: Integrate TypeScript for pci-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our pci-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/search/pagefind-ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

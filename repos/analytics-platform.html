@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analytics-platform - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/adrs/">All ADRs</a></li>
+                    <li><a href="/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="repository-page">
+                <nav class="breadcrumb">
+                    <a href="/">Home</a> /
+                    <a href="/repos/">Repositories</a> /
+                    <span>analytics-platform</span>
+                </nav>
+            
+                <header class="repo-header">
+                    <h1>analytics-platform</h1>
+                    <p class="lead">93 Architecture Decision Records</p>
+                    <a href="" class="btn btn-secondary" target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </header>
+            
+                <section class="section">
+                    <h2>ADR Status</h2>
+                    <div class="stats-grid stats-small">
+                        
+                                    <div class="stat-card stat-proposed">
+                                        <div class="stat-value">20</div>
+                                        <div class="stat-label">Proposed</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-accepted">
+                                        <div class="stat-value">50</div>
+                                        <div class="stat-label">Accepted</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-superseded">
+                                        <div class="stat-value">15</div>
+                                        <div class="stat-label">Superseded</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-deprecated">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">Deprecated</div>
+                                    </div>
+                                    
+                    </div>
+                </section>
+            
+                <section class="section">
+                    <h2>Decisions</h2>
+                    <div class="adr-list">
+                        
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-03-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0001.html">ADR-0001: Integrate PostgreSQL for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-12-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0002.html">ADR-0002: Standardize-on Vue.js for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-02-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0003.html">ADR-0003: Migrate-to GraphQL for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-03-19</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0004.html">ADR-0004: Migrate-to OAuth-2.0 for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0005.html">ADR-0005: Adopt PostgreSQL for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0006.html">ADR-0006: Switch-to Python for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-04-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0007.html">ADR-0007: Implement Kubernetes for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-05-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0008.html">ADR-0008: Standardize-on TypeScript for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-11-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0009.html">ADR-0009: Deploy Elasticsearch for etl-pipeline</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our etl-pipeline implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considera...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-01-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0010.html">ADR-0010: Switch-to MongoDB for data-export</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-export implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-05-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0011.html">ADR-0011: Integrate Docker for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-05-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0012.html">ADR-0012: Integrate Elasticsearch for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0013.html">ADR-0013: Use Redis for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-07-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0014.html">ADR-0014: Standardize-on GitHub-Actions for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-03-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0015.html">ADR-0015: Use Node.js for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-12-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0016.html">ADR-0016: Migrate-to Vue.js for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-11-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0017.html">ADR-0017: Deploy RabbitMQ for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-01-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0018.html">ADR-0018: Choose React for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-07-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0019.html">ADR-0019: Implement PostgreSQL for data-export</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-export implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0020.html">ADR-0020: Use Python for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-01-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0021.html">ADR-0021: Switch-to GraphQL for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-02-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0022.html">ADR-0022: Switch-to Vue.js for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-06-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0023.html">ADR-0023: Deploy PostgreSQL for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-07-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0024.html">ADR-0024: Choose PostgreSQL for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0025.html">ADR-0025: Choose OpenID-Connect for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-04-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0026.html">ADR-0026: Standardize-on gRPC for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-10-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0027.html">ADR-0027: Standardize-on GitHub-Actions for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-03-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0028.html">ADR-0028: Deploy Redis for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-02-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0029.html">ADR-0029: Integrate TypeScript for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-11-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0030.html">ADR-0030: Integrate OpenID-Connect for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-01-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0031.html">ADR-0031: Integrate GitHub-Actions for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-04-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0032.html">ADR-0032: Deploy Kubernetes for data-ingestion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-ingestion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-12-19</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0033.html">ADR-0033: Switch-to Vue.js for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-01-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0034.html">ADR-0034: Migrate-to OAuth-2.0 for etl-pipeline</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our etl-pipeline implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considera...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0035.html">ADR-0035: Deploy PostgreSQL for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0036.html">ADR-0036: Implement REST-API for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-06-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0037.html">ADR-0037: Use gRPC for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-04-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0038.html">ADR-0038: Choose TypeScript for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-01-19</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0039.html">ADR-0039: Integrate HashiCorp-Vault for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-12-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0040.html">ADR-0040: Choose React for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-01-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0041.html">ADR-0041: Implement WebSockets for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-04-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0042.html">ADR-0042: Implement Redis for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-12-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0043.html">ADR-0043: Adopt Vue.js for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-09-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0044.html">ADR-0044: Use TypeScript for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-07-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0045.html">ADR-0045: Switch-to React for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-10-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0046.html">ADR-0046: Standardize-on MongoDB for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0047.html">ADR-0047: Migrate-to JWT for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0048.html">ADR-0048: Standardize-on AWS-Lambda for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2024-04-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0049.html">ADR-0049: Standardize-on Azure-Functions for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-07-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0050.html">ADR-0050: Integrate Elasticsearch for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2026-01-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0051.html">ADR-0051: Implement Terraform for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-07-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0052.html">ADR-0052: Use GraphQL for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0053.html">ADR-0053: Standardize-on PostgreSQL for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0054.html">ADR-0054: Adopt REST-API for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0055.html">ADR-0055: Use JWT for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0056.html">ADR-0056: Switch-to OAuth-2.0 for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0057.html">ADR-0057: Choose JWT for data-ingestion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-ingestion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-06-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0058.html">ADR-0058: Use OpenID-Connect for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-08-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0059.html">ADR-0059: Migrate-to GraphQL for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0060.html">ADR-0060: Use React for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-02-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0061.html">ADR-0061: Use React for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-02-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0062.html">ADR-0062: Adopt Azure-Functions for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-11-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0063.html">ADR-0063: Choose GitHub-Actions for etl-pipeline</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our etl-pipeline implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considera...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-09-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0064.html">ADR-0064: Standardize-on OAuth-2.0 for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-12-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0065.html">ADR-0065: Use TypeScript for custom-metrics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our custom-metrics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-09-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0066.html">ADR-0066: Use Docker for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-31</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0067.html">ADR-0067: Use MongoDB for data-ingestion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-ingestion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-04-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0068.html">ADR-0068: Integrate gRPC for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0069.html">ADR-0069: Integrate Terraform for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-07-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0070.html">ADR-0070: Adopt Elasticsearch for query-optimization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our query-optimization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-10-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0071.html">ADR-0071: Switch-to Kubernetes for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-11-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0072.html">ADR-0072: Implement Vue.js for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0073.html">ADR-0073: Switch-to Vue.js for data-export</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-export implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-11-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0074.html">ADR-0074: Choose Elasticsearch for data-ingestion</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-ingestion implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-09-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0075.html">ADR-0075: Integrate Node.js for etl-pipeline</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our etl-pipeline implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considera...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-12-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0076.html">ADR-0076: Migrate-to GraphQL for real-time-analytics</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our real-time-analytics implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-12-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0077.html">ADR-0077: Standardize-on MongoDB for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0078.html">ADR-0078: Integrate Elasticsearch for event-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our event-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-07-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0079.html">ADR-0079: Migrate-to GraphQL for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-05-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0080.html">ADR-0080: Integrate REST-API for dashboard-design</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our dashboard-design implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-06-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0081.html">ADR-0081: Use AWS-Lambda for data-export</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-export implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2024-08-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0082.html">ADR-0082: Use DotNet-Core for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-01-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0083.html">ADR-0083: Integrate JWT for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-02-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0084.html">ADR-0084: Deploy Terraform for data-export</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-export implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-02-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0085.html">ADR-0085: Implement Python for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-04-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0086.html">ADR-0086: Integrate GraphQL for data-retention</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-retention implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-11-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0087.html">ADR-0087: Integrate Kubernetes for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-11-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0088.html">ADR-0088: Integrate GitHub-Actions for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0089.html">ADR-0089: Use GraphQL for visualization-library</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our visualization-library implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key ...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-09-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0090.html">ADR-0090: Standardize-on WebSockets for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-01-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0091.html">ADR-0091: Integrate Terraform for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0092.html">ADR-0092: Switch-to Kubernetes for report-generation</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our report-generation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-09-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/analytics-platform_0093.html">ADR-0093: Integrate Vue.js for data-warehouse</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our data-warehouse implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/search/pagefind-ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

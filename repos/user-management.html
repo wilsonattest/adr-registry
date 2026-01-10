@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-management - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/adrs/">All ADRs</a></li>
+                    <li><a href="/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="repository-page">
+                <nav class="breadcrumb">
+                    <a href="/">Home</a> /
+                    <a href="/repos/">Repositories</a> /
+                    <span>user-management</span>
+                </nav>
+            
+                <header class="repo-header">
+                    <h1>user-management</h1>
+                    <p class="lead">85 Architecture Decision Records</p>
+                    <a href="" class="btn btn-secondary" target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </header>
+            
+                <section class="section">
+                    <h2>ADR Status</h2>
+                    <div class="stats-grid stats-small">
+                        
+                                    <div class="stat-card stat-accepted">
+                                        <div class="stat-value">45</div>
+                                        <div class="stat-label">Accepted</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-proposed">
+                                        <div class="stat-value">20</div>
+                                        <div class="stat-label">Proposed</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-superseded">
+                                        <div class="stat-value">13</div>
+                                        <div class="stat-label">Superseded</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-deprecated">
+                                        <div class="stat-value">7</div>
+                                        <div class="stat-label">Deprecated</div>
+                                    </div>
+                                    
+                    </div>
+                </section>
+            
+                <section class="section">
+                    <h2>Decisions</h2>
+                    <div class="adr-list">
+                        
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0001.html">ADR-0001: Use Elasticsearch for account-recovery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our account-recovery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0002.html">ADR-0002: Use Kafka for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-10-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0003.html">ADR-0003: Deploy gRPC for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-04-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0004.html">ADR-0004: Implement WebSockets for authentication</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authentication implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-01-19</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0005.html">ADR-0005: Choose Redis for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0006.html">ADR-0006: Use RabbitMQ for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0007.html">ADR-0007: Deploy gRPC for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0008.html">ADR-0008: Implement GitHub-Actions for account-recovery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our account-recovery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-01-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0009.html">ADR-0009: Use React for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-05-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0010.html">ADR-0010: Implement React for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-10-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0011.html">ADR-0011: Standardize-on WebSockets for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-10-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0012.html">ADR-0012: Adopt gRPC for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0013.html">ADR-0013: Deploy JWT for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0014.html">ADR-0014: Use RabbitMQ for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0015.html">ADR-0015: Choose GitHub-Actions for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0016.html">ADR-0016: Integrate Vue.js for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0017.html">ADR-0017: Use React for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-02-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0018.html">ADR-0018: Deploy WebSockets for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-08-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0019.html">ADR-0019: Use Docker for account-recovery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our account-recovery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-05-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0020.html">ADR-0020: Choose Terraform for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-01-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0021.html">ADR-0021: Standardize-on OAuth-2.0 for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0022.html">ADR-0022: Migrate-to Terraform for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-11-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0023.html">ADR-0023: Adopt gRPC for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-06-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0024.html">ADR-0024: Deploy TypeScript for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0025.html">ADR-0025: Standardize-on Elasticsearch for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0026.html">ADR-0026: Implement gRPC for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-07-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0027.html">ADR-0027: Switch-to Terraform for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0028.html">ADR-0028: Standardize-on OAuth-2.0 for authentication</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authentication implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-05-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0029.html">ADR-0029: Migrate-to HashiCorp-Vault for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0030.html">ADR-0030: Switch-to WebSockets for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-08-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0031.html">ADR-0031: Use GitHub-Actions for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-03-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0032.html">ADR-0032: Implement GraphQL for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-09-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0033.html">ADR-0033: Adopt Elasticsearch for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0034.html">ADR-0034: Deploy React for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-02-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0035.html">ADR-0035: Choose MongoDB for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-07-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0036.html">ADR-0036: Migrate-to Azure-Functions for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-12-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0037.html">ADR-0037: Implement AWS-Lambda for authentication</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authentication implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-06-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0038.html">ADR-0038: Implement Redis for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-01-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0039.html">ADR-0039: Adopt Kubernetes for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0040.html">ADR-0040: Deploy GitHub-Actions for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0041.html">ADR-0041: Deploy Terraform for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-09-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0042.html">ADR-0042: Integrate OAuth-2.0 for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-07-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0043.html">ADR-0043: Integrate DotNet-Core for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0044.html">ADR-0044: Use Python for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0045.html">ADR-0045: Deploy DotNet-Core for authentication</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authentication implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-11-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0046.html">ADR-0046: Use Azure-Functions for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0047.html">ADR-0047: Deploy Kafka for account-recovery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our account-recovery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-02-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0048.html">ADR-0048: Choose TypeScript for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-06-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0049.html">ADR-0049: Integrate REST-API for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-10-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0050.html">ADR-0050: Implement HashiCorp-Vault for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-05-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0051.html">ADR-0051: Use Elasticsearch for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0052.html">ADR-0052: Integrate DotNet-Core for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-05-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0053.html">ADR-0053: Integrate Vue.js for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0054.html">ADR-0054: Deploy Docker for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0055.html">ADR-0055: Implement Docker for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-07-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0056.html">ADR-0056: Switch-to React for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0057.html">ADR-0057: Adopt GraphQL for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-08-29</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0058.html">ADR-0058: Standardize-on React for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-12-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0059.html">ADR-0059: Use MongoDB for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-05-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0060.html">ADR-0060: Switch-to OpenID-Connect for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-09-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0061.html">ADR-0061: Implement PostgreSQL for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2026-01-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0062.html">ADR-0062: Adopt Docker for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-04-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0063.html">ADR-0063: Switch-to Kafka for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-09-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0064.html">ADR-0064: Deploy Redis for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-10-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0065.html">ADR-0065: Switch-to DotNet-Core for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-02-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0066.html">ADR-0066: Choose Redis for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-02-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0067.html">ADR-0067: Deploy WebSockets for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-11-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0068.html">ADR-0068: Deploy MongoDB for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0069.html">ADR-0069: Integrate OpenID-Connect for sso</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sso implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerations inc...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-04-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0070.html">ADR-0070: Choose OpenID-Connect for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-02-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0071.html">ADR-0071: Implement GitHub-Actions for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-05-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0072.html">ADR-0072: Implement Vue.js for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-08-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0073.html">ADR-0073: Adopt Terraform for user-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-07-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0074.html">ADR-0074: Migrate-to React for gdpr-compliance</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our gdpr-compliance implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-05-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0075.html">ADR-0075: Choose OAuth-2.0 for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-09-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0076.html">ADR-0076: Migrate-to MongoDB for audit-logging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our audit-logging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-08-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0077.html">ADR-0077: Switch-to TypeScript for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-11-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0078.html">ADR-0078: Implement JWT for session-handling</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our session-handling implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-09-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0079.html">ADR-0079: Use GitHub-Actions for role-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our role-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0080.html">ADR-0080: Integrate TypeScript for account-recovery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our account-recovery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0081.html">ADR-0081: Switch-to Vue.js for user-profiles</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our user-profiles implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2025-09-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0082.html">ADR-0082: Use RabbitMQ for password-policy</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our password-policy implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consid...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-11-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0083.html">ADR-0083: Standardize-on DotNet-Core for authorization</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authorization implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-05-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0084.html">ADR-0084: Integrate GraphQL for oauth-integration</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our oauth-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2024-05-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/user-management_0085.html">ADR-0085: Standardize-on PostgreSQL for authentication</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our authentication implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/search/pagefind-ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

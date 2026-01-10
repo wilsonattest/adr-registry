@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification-hub - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/">Dashboard</a></li>
+                    <li><a href="/adrs/">All ADRs</a></li>
+                    <li><a href="/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="repository-page">
+                <nav class="breadcrumb">
+                    <a href="/">Home</a> /
+                    <a href="/repos/">Repositories</a> /
+                    <span>notification-hub</span>
+                </nav>
+            
+                <header class="repo-header">
+                    <h1>notification-hub</h1>
+                    <p class="lead">54 Architecture Decision Records</p>
+                    <a href="" class="btn btn-secondary" target="_blank" rel="noopener">
+                        View on GitHub
+                    </a>
+                </header>
+            
+                <section class="section">
+                    <h2>ADR Status</h2>
+                    <div class="stats-grid stats-small">
+                        
+                                    <div class="stat-card stat-accepted">
+                                        <div class="stat-value">30</div>
+                                        <div class="stat-label">Accepted</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-proposed">
+                                        <div class="stat-value">12</div>
+                                        <div class="stat-label">Proposed</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-superseded">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">Superseded</div>
+                                    </div>
+                                    
+                                    <div class="stat-card stat-deprecated">
+                                        <div class="stat-value">4</div>
+                                        <div class="stat-label">Deprecated</div>
+                                    </div>
+                                    
+                    </div>
+                </section>
+            
+                <section class="section">
+                    <h2>Decisions</h2>
+                    <div class="adr-list">
+                        
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-05-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0001.html">ADR-0001: Migrate-to gRPC for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-06-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0002.html">ADR-0002: Implement JWT for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-05-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0003.html">ADR-0003: Use OpenID-Connect for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-02-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0004.html">ADR-0004: Deploy JWT for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2023-11-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0005.html">ADR-0005: Standardize-on GitHub-Actions for notification-history</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-history implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key c...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-06-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0006.html">ADR-0006: Implement Docker for in-app-messaging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our in-app-messaging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0007.html">ADR-0007: Choose GraphQL for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-03-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0008.html">ADR-0008: Implement Terraform for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-04-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0009.html">ADR-0009: Integrate Kafka for sms-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sms-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-08-23</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0010.html">ADR-0010: Deploy Elasticsearch for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0011.html">ADR-0011: Adopt Python for rate-limiting</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our rate-limiting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2024-11-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0012.html">ADR-0012: Deploy MongoDB for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-07-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0013.html">ADR-0013: Use PostgreSQL for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-10-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0014.html">ADR-0014: Implement HashiCorp-Vault for webhook-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our webhook-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-26</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0015.html">ADR-0015: Adopt Python for sms-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sms-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-05-20</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0016.html">ADR-0016: Adopt OAuth-2.0 for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-07-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0017.html">ADR-0017: Implement Vue.js for webhook-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our webhook-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-08-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0018.html">ADR-0018: Migrate-to React for sms-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sms-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-01-21</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0019.html">ADR-0019: Adopt HashiCorp-Vault for notification-history</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-history implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key c...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-02-06</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0020.html">ADR-0020: Integrate Terraform for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-27</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0021.html">ADR-0021: Standardize-on Terraform for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-06-11</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0022.html">ADR-0022: Deploy Vue.js for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-08-14</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0023.html">ADR-0023: Adopt MongoDB for rate-limiting</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our rate-limiting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-06-28</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0024.html">ADR-0024: Choose gRPC for rate-limiting</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our rate-limiting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-17</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0025.html">ADR-0025: Choose MongoDB for notification-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            K...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-06-30</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0026.html">ADR-0026: Switch-to JWT for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-08-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0027.html">ADR-0027: Implement JWT for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0028.html">ADR-0028: Use GraphQL for batch-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our batch-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-06-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0029.html">ADR-0029: Use GraphQL for delivery-tracking</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our delivery-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key cons...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-03-31</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0030.html">ADR-0030: Use TypeScript for sms-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sms-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-03-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0031.html">ADR-0031: Switch-to Python for template-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our template-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-03-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0032.html">ADR-0032: Integrate WebSockets for template-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our template-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-04-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0033.html">ADR-0033: Migrate-to Kubernetes for notification-history</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-history implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key c...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-11-13</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0034.html">ADR-0034: Adopt React for rate-limiting</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our rate-limiting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consider...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2024-07-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0035.html">ADR-0035: Implement WebSockets for in-app-messaging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our in-app-messaging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-04-18</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0036.html">ADR-0036: Implement DotNet-Core for notification-history</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-history implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key c...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-03</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0037.html">ADR-0037: Adopt Terraform for notification-history</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-history implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key c...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-06-15</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0038.html">ADR-0038: Standardize-on REST-API for batch-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our batch-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-03-22</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0039.html">ADR-0039: Switch-to GitHub-Actions for notification-preferences</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our notification-preferences implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            K...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-05-08</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0040.html">ADR-0040: Standardize-on Terraform for in-app-messaging</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our in-app-messaging implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-04-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0041.html">ADR-0041: Choose TypeScript for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-08-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0042.html">ADR-0042: Standardize-on REST-API for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-01-31</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0043.html">ADR-0043: Implement gRPC for batch-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our batch-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2024-02-02</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0044.html">ADR-0044: Choose Elasticsearch for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2025-04-01</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0045.html">ADR-0045: Integrate Kafka for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-deprecated">Deprecated</span>
+                                            
+                                                    <span class="adr-date">2023-04-25</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0046.html">ADR-0046: Switch-to OAuth-2.0 for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-01-05</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0047.html">ADR-0047: Implement REST-API for push-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our push-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-proposed">Proposed</span>
+                                            
+                                                    <span class="adr-date">2025-10-07</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0048.html">ADR-0048: Standardize-on Docker for push-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our push-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key con...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-12-16</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0049.html">ADR-0049: Standardize-on gRPC for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2023-02-09</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0050.html">ADR-0050: Standardize-on gRPC for template-management</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our template-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-10-24</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0051.html">ADR-0051: Standardize-on Azure-Functions for email-delivery</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our email-delivery implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key conside...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2023-09-04</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0052.html">ADR-0052: Switch-to TypeScript for sms-gateway</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our sms-gateway implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key considerat...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-accepted">Accepted</span>
+                                            
+                                                    <span class="adr-date">2025-06-12</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0053.html">ADR-0053: Implement DotNet-Core for priority-queuing</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our priority-queuing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key consi...</p>
+                                            
+                                    </article>
+                                    
+                                    <article class="adr-card">
+                                        <div class="adr-header">
+                                            <span class="badge badge-superseded">Superseded</span>
+                                            
+                                                    <span class="adr-date">2024-06-10</span>
+                                                    
+                                        </div>
+                                        <h3 class="adr-title">
+                                            <a href="/adr/notification-hub_0054.html">ADR-0054: Use Elasticsearch for batch-notifications</a>
+                                        </h3>
+                                        
+                                            <p class="adr-excerpt">Our batch-notifications implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
+            
+            Key co...</p>
+                                            
+                                    </article>
+                                    
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/search/pagefind-ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
