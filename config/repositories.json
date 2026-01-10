@@ -1,0 +1,14 @@
+{
+  "organization": "your-org",
+  "discoverAll": true,
+  "adrPath": "docs/adr",
+  "exclude": [
+    "your-org/archived-*",
+    "your-org/*-deprecated"
+  ],
+  "include": [],
+  "siteTitle": "Architecture Decision Records",
+  "siteDescription": "Cross-project ADR registry for your-org",
+  "baseUrl": "",
+  "outputPath": "docs"
+}

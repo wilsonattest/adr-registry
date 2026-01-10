@@ -1,0 +1,52 @@
+<div class="adr-list-page">
+    <h1>All Architecture Decision Records</h1>
+    <p class="lead">{{ total_adr_count }} decisions across {{ repository_count }} repositories</p>
+
+    <section class="section">
+        <h2>Search</h2>
+        <div id="search"></div>
+    </section>
+
+    <section class="section">
+        <h2>All ADRs</h2>
+        <div class="adr-list">
+            {{ for adr in adrs }}
+            <article class="adr-card" data-pagefind-body>
+                <span data-pagefind-filter="status:{{ adr.status }}"></span>
+                <span data-pagefind-filter="repo:{{ adr.repository_name }}"></span>
+                <span data-pagefind-meta="status:{{ adr.status }}"></span>
+                <span data-pagefind-meta="repo:{{ adr.repository_name }}"></span>
+                <div class="adr-header">
+                    <span class="badge badge-{{ adr.status | string.downcase }}">{{ adr.status }}</span>
+                    {{ if adr.date }}
+                    <span class="adr-date">{{ adr.date | date.to_string '%Y-%m-%d' }}</span>
+                    {{ end }}
+                </div>
+                <h3 class="adr-title">
+                    <a href="{{ base_url }}/adr/{{ adr.id }}.html">{{ adr.title }}</a>
+                </h3>
+                <div class="adr-meta">
+                    <span class="adr-repo">
+                        <a href="{{ base_url }}/repos/{{ adr.repository_name }}.html">{{ adr.repository_name }}</a>
+                    </span>
+                    <span class="adr-number">ADR-{{ adr.number }}</span>
+                </div>
+                {{ if adr.context }}
+                <p class="adr-excerpt">{{ adr.context | string.truncate 150 }}</p>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+    </section>
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showImages: false,
+        excerptLength: 30
+    });
+});
+</script>

@@ -1,0 +1,67 @@
+name: Build ADR Registry
+
+on:
+  schedule:
+    - cron: '0 * * * *'           # Every hour
+  workflow_dispatch:               # Manual trigger
+  push:
+    branches: [main]
+    paths: ['config/**', 'src/**'] # Rebuild on config or code changes
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build Generator
+        run: dotnet build src/AdrRegistry.Generator --configuration Release --no-restore
+
+      - name: Run Tests
+        run: dotnet test tests/AdrRegistry.Generator.Tests --no-build --configuration Release
+        continue-on-error: true
+
+      - name: Write GitHub App Private Key
+        run: |
+          echo "${{ secrets.GITHUB_APP_PRIVATE_KEY }}" > github-app.pem
+          chmod 600 github-app.pem
+
+      - name: Generate Site
+        env:
+          GITHUB_APP_ID: ${{ secrets.GITHUB_APP_ID }}
+          GITHUB_APP_INSTALLATION_ID: ${{ secrets.GITHUB_APP_INSTALLATION_ID }}
+          GITHUB_APP_PRIVATE_KEY_PATH: github-app.pem
+        run: dotnet run --project src/AdrRegistry.Generator --configuration Release
+
+      - name: Setup Node.js (for Pagefind)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build Search Index
+        run: npx pagefind@latest --site docs
+
+      - name: Clean up private key
+        if: always()
+        run: rm -f github-app.pem
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs

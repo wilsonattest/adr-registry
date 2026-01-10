@@ -1,0 +1,13 @@
+{
+  "organization": "test-org",
+  "discoverAll": true,
+  "adrPath": "docs/adr",
+  "exclude": [],
+  "include": [],
+  "siteTitle": "Architecture Decision Records (Test)",
+  "siteDescription": "Test ADR registry with sample data",
+  "baseUrl": "",
+  "outputPath": "docs",
+  "localMode": true,
+  "localPath": "test-repos"
+}

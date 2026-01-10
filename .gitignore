@@ -1,0 +1,28 @@
+# Build outputs
+bin/
+obj/
+out/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Generated site (committed separately via gh-pages)
+docs/
+
+# Secrets
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+coverage/
+
+# Local test data
+test-repos/

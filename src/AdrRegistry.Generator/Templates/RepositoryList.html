@@ -1,0 +1,18 @@
+<div class="repository-list-page">
+    <nav class="breadcrumb">
+        <a href="{{ base_url }}/">Home</a> /
+        <span>Repositories</span>
+    </nav>
+
+    <h1>Repositories</h1>
+    <p class="lead">{{ repository_count }} repositories with Architecture Decision Records</p>
+
+    <div class="repo-grid">
+        {{ for repo in repositories }}
+        <a href="{{ base_url }}/repos/{{ repo.name }}.html" class="repo-card">
+            <h3>{{ repo.name }}</h3>
+            <span class="repo-count">{{ repo.adrs.size }} ADRs</span>
+        </a>
+        {{ end }}
+    </div>
+</div>

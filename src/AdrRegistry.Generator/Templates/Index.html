@@ -1,0 +1,76 @@
+<div class="dashboard">
+    <h1>Architecture Decision Records</h1>
+    <p class="lead">{{ site_description }}</p>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-value">{{ total_adr_count }}</div>
+            <div class="stat-label">Total ADRs</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">{{ repository_count }}</div>
+            <div class="stat-label">Repositories</div>
+        </div>
+        {{ for status in adrs_by_status }}
+        <div class="stat-card stat-{{ status.key | string.downcase }}">
+            <div class="stat-value">{{ status.value }}</div>
+            <div class="stat-label">{{ status.key }}</div>
+        </div>
+        {{ end }}
+    </div>
+
+    <section class="section">
+        <h2>Quick Search</h2>
+        <div id="search"></div>
+    </section>
+
+    <section class="section">
+        <h2>Recent Decisions</h2>
+        {{ if recent_adrs.size > 0 }}
+        <div class="adr-list">
+            {{ for adr in recent_adrs }}
+            <article class="adr-card">
+                <div class="adr-header">
+                    <span class="badge badge-{{ adr.status | string.downcase }}">{{ adr.status }}</span>
+                    <span class="adr-date">{{ adr.date | date.to_string '%Y-%m-%d' }}</span>
+                </div>
+                <h3 class="adr-title">
+                    <a href="{{ base_url }}/adr/{{ adr.id }}.html">{{ adr.title }}</a>
+                </h3>
+                <div class="adr-meta">
+                    <span class="adr-repo">
+                        <a href="{{ base_url }}/repos/{{ adr.repository_name }}.html">{{ adr.repository_name }}</a>
+                    </span>
+                    <span class="adr-number">ADR-{{ adr.number }}</span>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        {{ else }}
+        <p>No ADRs found yet.</p>
+        {{ end }}
+    </section>
+
+    <section class="section">
+        <h2>Repositories with ADRs</h2>
+        <div class="repo-grid">
+            {{ for repo in repositories }}
+            <a href="{{ base_url }}/repos/{{ repo.name }}.html" class="repo-card">
+                <h3>{{ repo.name }}</h3>
+                <span class="repo-count">{{ repo.adrs.size }} ADRs</span>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showImages: false,
+        excerptLength: 30
+    });
+});
+</script>

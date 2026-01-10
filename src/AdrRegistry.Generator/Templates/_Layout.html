@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ site_title }}</title>
+    <meta name="description" content="{{ site_description }}">
+    <link rel="stylesheet" href="{{ base_url }}/css/style.css">
+    <link href="{{ base_url }}/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="{{ base_url }}/" class="nav-brand">{{ site_title }}</a>
+                <ul class="nav-links">
+                    <li><a href="{{ base_url }}/">Dashboard</a></li>
+                    <li><a href="{{ base_url }}/adrs/">All ADRs</a></li>
+                    <li><a href="{{ base_url }}/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on {{ generated_at | date.to_string '%Y-%m-%d %H:%M' }} UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="{{ base_url }}/search/pagefind-ui.js"></script>
+    <script src="{{ base_url }}/js/app.js"></script>
+</body>
+</html>
