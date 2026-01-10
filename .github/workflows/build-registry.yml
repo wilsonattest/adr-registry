@@ -37,8 +37,10 @@ jobs:
         continue-on-error: true
 
       - name: Write GitHub App Private Key
+        env:
+          PRIVATE_KEY: ${{ secrets.ADR_APP_PRIVATE_KEY }}
         run: |
-          echo "${{ secrets.ADR_APP_PRIVATE_KEY }}" > github-app.pem
+          printf '%s\n' "$PRIVATE_KEY" > github-app.pem
           chmod 600 github-app.pem
 
       - name: Generate Site
