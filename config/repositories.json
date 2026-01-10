@@ -8,6 +8,6 @@
   "include": [],
   "siteTitle": "Architecture Decision Records",
   "siteDescription": "Cross-project ADR registry for wilsonattest",
-  "baseUrl": "",
+  "baseUrl": "/adr-registry",
   "outputPath": "docs"
 }
