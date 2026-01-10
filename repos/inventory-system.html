@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inventory-system - Architecture Decision Records</title>
     <meta name="description" content="Cross-project ADR registry for wilsonattest">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="/search/pagefind-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="/adr-registry/css/style.css">
+    <link href="/adr-registry/search/pagefind-ui.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="/" class="nav-brand">Architecture Decision Records</a>
+                <a href="/adr-registry/" class="nav-brand">Architecture Decision Records</a>
                 <ul class="nav-links">
-                    <li><a href="/">Dashboard</a></li>
-                    <li><a href="/adrs/">All ADRs</a></li>
-                    <li><a href="/repos/">Repositories</a></li>
+                    <li><a href="/adr-registry/">Dashboard</a></li>
+                    <li><a href="/adr-registry/adrs/">All ADRs</a></li>
+                    <li><a href="/adr-registry/repos/">Repositories</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,8 +26,8 @@
         <div class="container">
             <div class="repository-page">
                 <nav class="breadcrumb">
-                    <a href="/">Home</a> /
-                    <a href="/repos/">Repositories</a> /
+                    <a href="/adr-registry/">Home</a> /
+                    <a href="/adr-registry/repos/">Repositories</a> /
                     <span>inventory-system</span>
                 </nav>
             
@@ -78,7 +78,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0001.html">ADR-0001: Integrate JWT for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0001.html">ADR-0001: Integrate JWT for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -95,7 +95,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0002.html">ADR-0002: Adopt PostgreSQL for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0002.html">ADR-0002: Adopt PostgreSQL for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -112,7 +112,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0003.html">ADR-0003: Deploy HashiCorp-Vault for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0003.html">ADR-0003: Deploy HashiCorp-Vault for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -129,7 +129,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0004.html">ADR-0004: Choose Node.js for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0004.html">ADR-0004: Choose Node.js for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -146,7 +146,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0005.html">ADR-0005: Migrate-to Redis for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0005.html">ADR-0005: Migrate-to Redis for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -163,7 +163,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0006.html">ADR-0006: Integrate OpenID-Connect for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0006.html">ADR-0006: Integrate OpenID-Connect for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -180,7 +180,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0007.html">ADR-0007: Implement MongoDB for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0007.html">ADR-0007: Implement MongoDB for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -197,7 +197,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0008.html">ADR-0008: Switch-to Elasticsearch for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0008.html">ADR-0008: Switch-to Elasticsearch for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -214,7 +214,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0009.html">ADR-0009: Switch-to Kafka for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0009.html">ADR-0009: Switch-to Kafka for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -231,7 +231,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0010.html">ADR-0010: Deploy Vue.js for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0010.html">ADR-0010: Deploy Vue.js for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -248,7 +248,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0011.html">ADR-0011: Integrate gRPC for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0011.html">ADR-0011: Integrate gRPC for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -265,7 +265,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0012.html">ADR-0012: Integrate Kubernetes for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0012.html">ADR-0012: Integrate Kubernetes for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -282,7 +282,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0013.html">ADR-0013: Migrate-to Redis for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0013.html">ADR-0013: Migrate-to Redis for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -299,7 +299,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0014.html">ADR-0014: Integrate GraphQL for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0014.html">ADR-0014: Integrate GraphQL for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -316,7 +316,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0015.html">ADR-0015: Migrate-to Python for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0015.html">ADR-0015: Migrate-to Python for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -333,7 +333,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0016.html">ADR-0016: Switch-to Elasticsearch for supplier-integration</a>
+                                            <a href="/adr-registry/adr/inventory-system_0016.html">ADR-0016: Switch-to Elasticsearch for supplier-integration</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our supplier-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -350,7 +350,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0017.html">ADR-0017: Adopt AWS-Lambda for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0017.html">ADR-0017: Adopt AWS-Lambda for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -367,7 +367,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0018.html">ADR-0018: Choose WebSockets for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0018.html">ADR-0018: Choose WebSockets for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -384,7 +384,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0019.html">ADR-0019: Standardize-on OAuth-2.0 for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0019.html">ADR-0019: Standardize-on OAuth-2.0 for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -401,7 +401,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0020.html">ADR-0020: Use AWS-Lambda for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0020.html">ADR-0020: Use AWS-Lambda for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -418,7 +418,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0021.html">ADR-0021: Adopt Vue.js for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0021.html">ADR-0021: Adopt Vue.js for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -435,7 +435,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0022.html">ADR-0022: Switch-to WebSockets for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0022.html">ADR-0022: Switch-to WebSockets for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -452,7 +452,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0023.html">ADR-0023: Migrate-to HashiCorp-Vault for warehouse-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0023.html">ADR-0023: Migrate-to HashiCorp-Vault for warehouse-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our warehouse-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -469,7 +469,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0024.html">ADR-0024: Implement WebSockets for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0024.html">ADR-0024: Implement WebSockets for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -486,7 +486,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0025.html">ADR-0025: Choose HashiCorp-Vault for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0025.html">ADR-0025: Choose HashiCorp-Vault for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -503,7 +503,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0026.html">ADR-0026: Switch-to Kafka for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0026.html">ADR-0026: Switch-to Kafka for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -520,7 +520,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0027.html">ADR-0027: Migrate-to Elasticsearch for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0027.html">ADR-0027: Migrate-to Elasticsearch for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -537,7 +537,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0028.html">ADR-0028: Migrate-to Kafka for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0028.html">ADR-0028: Migrate-to Kafka for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -554,7 +554,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0029.html">ADR-0029: Migrate-to WebSockets for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0029.html">ADR-0029: Migrate-to WebSockets for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -571,7 +571,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0030.html">ADR-0030: Integrate Terraform for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0030.html">ADR-0030: Integrate Terraform for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -588,7 +588,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0031.html">ADR-0031: Switch-to Node.js for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0031.html">ADR-0031: Switch-to Node.js for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -605,7 +605,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0032.html">ADR-0032: Use JWT for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0032.html">ADR-0032: Use JWT for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -622,7 +622,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0033.html">ADR-0033: Migrate-to Azure-Functions for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0033.html">ADR-0033: Migrate-to Azure-Functions for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -639,7 +639,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0034.html">ADR-0034: Implement PostgreSQL for supplier-integration</a>
+                                            <a href="/adr-registry/adr/inventory-system_0034.html">ADR-0034: Implement PostgreSQL for supplier-integration</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our supplier-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -656,7 +656,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0035.html">ADR-0035: Integrate HashiCorp-Vault for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0035.html">ADR-0035: Integrate HashiCorp-Vault for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -673,7 +673,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0036.html">ADR-0036: Standardize-on Kafka for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0036.html">ADR-0036: Standardize-on Kafka for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -690,7 +690,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0037.html">ADR-0037: Standardize-on GraphQL for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0037.html">ADR-0037: Standardize-on GraphQL for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -707,7 +707,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0038.html">ADR-0038: Deploy Redis for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0038.html">ADR-0038: Deploy Redis for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -724,7 +724,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0039.html">ADR-0039: Integrate OAuth-2.0 for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0039.html">ADR-0039: Integrate OAuth-2.0 for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -741,7 +741,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0040.html">ADR-0040: Use DotNet-Core for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0040.html">ADR-0040: Use DotNet-Core for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -758,7 +758,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0041.html">ADR-0041: Choose OAuth-2.0 for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0041.html">ADR-0041: Choose OAuth-2.0 for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -775,7 +775,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0042.html">ADR-0042: Switch-to React for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0042.html">ADR-0042: Switch-to React for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -792,7 +792,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0043.html">ADR-0043: Switch-to JWT for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0043.html">ADR-0043: Switch-to JWT for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -809,7 +809,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0044.html">ADR-0044: Adopt OpenID-Connect for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0044.html">ADR-0044: Adopt OpenID-Connect for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -826,7 +826,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0045.html">ADR-0045: Deploy GitHub-Actions for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0045.html">ADR-0045: Deploy GitHub-Actions for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -843,7 +843,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0046.html">ADR-0046: Integrate Elasticsearch for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0046.html">ADR-0046: Integrate Elasticsearch for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -860,7 +860,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0047.html">ADR-0047: Standardize-on TypeScript for supplier-integration</a>
+                                            <a href="/adr-registry/adr/inventory-system_0047.html">ADR-0047: Standardize-on TypeScript for supplier-integration</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our supplier-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -877,7 +877,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0048.html">ADR-0048: Migrate-to HashiCorp-Vault for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0048.html">ADR-0048: Migrate-to HashiCorp-Vault for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -894,7 +894,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0049.html">ADR-0049: Switch-to WebSockets for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0049.html">ADR-0049: Switch-to WebSockets for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -911,7 +911,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0050.html">ADR-0050: Deploy Terraform for supplier-integration</a>
+                                            <a href="/adr-registry/adr/inventory-system_0050.html">ADR-0050: Deploy Terraform for supplier-integration</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our supplier-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -928,7 +928,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0051.html">ADR-0051: Use React for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0051.html">ADR-0051: Use React for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -945,7 +945,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0052.html">ADR-0052: Implement RabbitMQ for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0052.html">ADR-0052: Implement RabbitMQ for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -962,7 +962,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0053.html">ADR-0053: Choose Python for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0053.html">ADR-0053: Choose Python for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -979,7 +979,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0054.html">ADR-0054: Migrate-to PostgreSQL for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0054.html">ADR-0054: Migrate-to PostgreSQL for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -996,7 +996,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0055.html">ADR-0055: Choose Redis for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0055.html">ADR-0055: Choose Redis for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1013,7 +1013,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0056.html">ADR-0056: Integrate Elasticsearch for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0056.html">ADR-0056: Integrate Elasticsearch for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1030,7 +1030,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0057.html">ADR-0057: Switch-to Kubernetes for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0057.html">ADR-0057: Switch-to Kubernetes for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1047,7 +1047,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0058.html">ADR-0058: Standardize-on Docker for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0058.html">ADR-0058: Standardize-on Docker for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1064,7 +1064,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0059.html">ADR-0059: Implement TypeScript for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0059.html">ADR-0059: Implement TypeScript for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1081,7 +1081,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0060.html">ADR-0060: Migrate-to WebSockets for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0060.html">ADR-0060: Migrate-to WebSockets for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1098,7 +1098,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0061.html">ADR-0061: Standardize-on DotNet-Core for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0061.html">ADR-0061: Standardize-on DotNet-Core for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1115,7 +1115,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0062.html">ADR-0062: Standardize-on PostgreSQL for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0062.html">ADR-0062: Standardize-on PostgreSQL for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1132,7 +1132,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0063.html">ADR-0063: Implement React for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0063.html">ADR-0063: Implement React for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1149,7 +1149,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0064.html">ADR-0064: Implement Terraform for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0064.html">ADR-0064: Implement Terraform for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1166,7 +1166,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0065.html">ADR-0065: Standardize-on Vue.js for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0065.html">ADR-0065: Standardize-on Vue.js for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1183,7 +1183,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0066.html">ADR-0066: Standardize-on Elasticsearch for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0066.html">ADR-0066: Standardize-on Elasticsearch for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1200,7 +1200,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0067.html">ADR-0067: Switch-to Azure-Functions for order-fulfillment</a>
+                                            <a href="/adr-registry/adr/inventory-system_0067.html">ADR-0067: Switch-to Azure-Functions for order-fulfillment</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our order-fulfillment implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1217,7 +1217,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0068.html">ADR-0068: Adopt GraphQL for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0068.html">ADR-0068: Adopt GraphQL for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1234,7 +1234,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0069.html">ADR-0069: Choose GitHub-Actions for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0069.html">ADR-0069: Choose GitHub-Actions for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1251,7 +1251,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0070.html">ADR-0070: Choose Redis for inventory-valuation</a>
+                                            <a href="/adr-registry/adr/inventory-system_0070.html">ADR-0070: Choose Redis for inventory-valuation</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-valuation implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1268,7 +1268,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0071.html">ADR-0071: Adopt AWS-Lambda for warehouse-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0071.html">ADR-0071: Adopt AWS-Lambda for warehouse-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our warehouse-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1285,7 +1285,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0072.html">ADR-0072: Integrate TypeScript for multi-location</a>
+                                            <a href="/adr-registry/adr/inventory-system_0072.html">ADR-0072: Integrate TypeScript for multi-location</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our multi-location implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1302,7 +1302,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0073.html">ADR-0073: Use OpenID-Connect for inventory-forecasting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0073.html">ADR-0073: Use OpenID-Connect for inventory-forecasting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our inventory-forecasting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1319,7 +1319,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0074.html">ADR-0074: Integrate TypeScript for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0074.html">ADR-0074: Integrate TypeScript for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1336,7 +1336,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0075.html">ADR-0075: Use Vue.js for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0075.html">ADR-0075: Use Vue.js for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1353,7 +1353,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0076.html">ADR-0076: Integrate Python for warehouse-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0076.html">ADR-0076: Integrate Python for warehouse-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our warehouse-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1370,7 +1370,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0077.html">ADR-0077: Implement Kubernetes for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0077.html">ADR-0077: Implement Kubernetes for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1387,7 +1387,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0078.html">ADR-0078: Deploy OAuth-2.0 for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0078.html">ADR-0078: Deploy OAuth-2.0 for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1404,7 +1404,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0079.html">ADR-0079: Migrate-to Node.js for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0079.html">ADR-0079: Migrate-to Node.js for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1421,7 +1421,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0080.html">ADR-0080: Use DotNet-Core for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0080.html">ADR-0080: Use DotNet-Core for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1438,7 +1438,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0081.html">ADR-0081: Implement TypeScript for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0081.html">ADR-0081: Implement TypeScript for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1455,7 +1455,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0082.html">ADR-0082: Migrate-to REST-API for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0082.html">ADR-0082: Migrate-to REST-API for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1472,7 +1472,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0083.html">ADR-0083: Deploy MongoDB for barcode-scanning</a>
+                                            <a href="/adr-registry/adr/inventory-system_0083.html">ADR-0083: Deploy MongoDB for barcode-scanning</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our barcode-scanning implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1489,7 +1489,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0084.html">ADR-0084: Standardize-on REST-API for stock-tracking</a>
+                                            <a href="/adr-registry/adr/inventory-system_0084.html">ADR-0084: Standardize-on REST-API for stock-tracking</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-tracking implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1506,7 +1506,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0085.html">ADR-0085: Integrate Docker for cycle-counting</a>
+                                            <a href="/adr-registry/adr/inventory-system_0085.html">ADR-0085: Integrate Docker for cycle-counting</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our cycle-counting implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1523,7 +1523,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0086.html">ADR-0086: Adopt Docker for supplier-integration</a>
+                                            <a href="/adr-registry/adr/inventory-system_0086.html">ADR-0086: Adopt Docker for supplier-integration</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our supplier-integration implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1540,7 +1540,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0087.html">ADR-0087: Standardize-on AWS-Lambda for batch-management</a>
+                                            <a href="/adr-registry/adr/inventory-system_0087.html">ADR-0087: Standardize-on AWS-Lambda for batch-management</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our batch-management implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1557,7 +1557,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0088.html">ADR-0088: Migrate-to React for returns-processing</a>
+                                            <a href="/adr-registry/adr/inventory-system_0088.html">ADR-0088: Migrate-to React for returns-processing</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our returns-processing implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1574,7 +1574,7 @@
                                                     
                                         </div>
                                         <h3 class="adr-title">
-                                            <a href="/adr/inventory-system_0089.html">ADR-0089: Integrate RabbitMQ for stock-alerts</a>
+                                            <a href="/adr-registry/adr/inventory-system_0089.html">ADR-0089: Integrate RabbitMQ for stock-alerts</a>
                                         </h3>
                                         
                                             <p class="adr-excerpt">Our stock-alerts implementation needs to handle increasing scale and complexity. The current approach is becoming difficult to maintain and doesn't meet our performance requirements.
@@ -1592,12 +1592,12 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Generated on 2026-01-10 20:36 UTC</p>
+            <p>Generated on 2026-01-10 20:43 UTC</p>
             <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
         </div>
     </footer>
 
-    <script src="/search/pagefind-ui.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="/adr-registry/search/pagefind-ui.js"></script>
+    <script src="/adr-registry/js/app.js"></script>
 </body>
 </html>
