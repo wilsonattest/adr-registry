@@ -11,15 +11,23 @@
         <h2>All ADRs</h2>
         <div class="adr-list">
             {{ for adr in adrs }}
-            <article class="adr-card" data-pagefind-body>
+            <article class="adr-card{{ if adr.is_from_pull_request }} adr-card-proposed{{ end }}" data-pagefind-body>
                 <span data-pagefind-filter="status:{{ adr.status }}"></span>
                 <span data-pagefind-filter="repo:{{ adr.repository_name }}"></span>
+                <span data-pagefind-filter="source:{{ if adr.is_from_pull_request }}Proposed{{ else }}Merged{{ end }}"></span>
                 <span data-pagefind-meta="status:{{ adr.status }}"></span>
                 <span data-pagefind-meta="repo:{{ adr.repository_name }}"></span>
                 <div class="adr-header">
+                    {{ if adr.is_from_pull_request }}
+                    <span class="badge badge-proposed">Proposed</span>
+                    <a href="{{ adr.pull_request_url }}" class="pr-link" target="_blank" rel="noopener">
+                        PR #{{ adr.pull_request_number }}
+                    </a>
+                    {{ else }}
                     <span class="badge badge-{{ adr.status | string.downcase }}">{{ adr.status }}</span>
                     {{ if adr.date }}
                     <span class="adr-date">{{ adr.date | date.to_string '%Y-%m-%d' }}</span>
+                    {{ end }}
                     {{ end }}
                 </div>
                 <h3 class="adr-title">
@@ -29,7 +37,11 @@
                     <span class="adr-repo">
                         <a href="{{ base_url }}/repos/{{ adr.repository_name }}.html">{{ adr.repository_name }}</a>
                     </span>
+                    {{ if adr.is_from_pull_request }}
+                    <span class="adr-author">by {{ adr.pull_request_author }}</span>
+                    {{ else }}
                     <span class="adr-number">ADR-{{ adr.number }}</span>
+                    {{ end }}
                 </div>
                 {{ if adr.context }}
                 <p class="adr-excerpt">{{ adr.context | string.truncate 150 }}</p>

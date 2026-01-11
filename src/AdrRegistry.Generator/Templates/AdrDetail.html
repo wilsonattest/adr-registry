@@ -1,8 +1,16 @@
-<article class="adr-detail" data-pagefind-body>
+<article class="adr-detail{{ if adr.is_from_pull_request }} adr-detail-proposed{{ end }}" data-pagefind-body>
     <span data-pagefind-filter="status:{{ adr.status }}"></span>
     <span data-pagefind-filter="repo:{{ adr.repository_name }}"></span>
+    <span data-pagefind-filter="source:{{ if adr.is_from_pull_request }}Proposed{{ else }}Merged{{ end }}"></span>
     <span data-pagefind-meta="status:{{ adr.status }}"></span>
     <span data-pagefind-meta="repo:{{ adr.repository_name }}"></span>
+
+    {{ if adr.is_from_pull_request }}
+    <div class="pr-banner">
+        <strong>Proposed ADR</strong> - This ADR is from an open pull request and has not been merged yet.
+        <a href="{{ adr.pull_request_url }}" target="_blank" rel="noopener">View PR #{{ adr.pull_request_number }}</a>
+    </div>
+    {{ end }}
 
     <nav class="breadcrumb">
         <a href="{{ base_url }}/">Home</a> /
@@ -12,13 +20,22 @@
 
     <header class="adr-detail-header">
         <div class="adr-detail-meta">
+            {{ if adr.is_from_pull_request }}
+            <span class="badge badge-proposed">Proposed</span>
+            {{ else }}
             <span class="badge badge-{{ adr.status | string.downcase }}">{{ adr.status }}</span>
+            {{ end }}
             {{ if adr.date }}
             <span class="adr-date">{{ adr.date | date.to_string '%Y-%m-%d' }}</span>
             {{ end }}
         </div>
         <h1>{{ adr.title }}</h1>
         <div class="adr-actions">
+            {{ if adr.is_from_pull_request }}
+            <a href="{{ adr.pull_request_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+                View Pull Request
+            </a>
+            {{ end }}
             <a href="{{ adr.github_url }}" class="btn btn-secondary" target="_blank" rel="noopener">
                 View on GitHub
             </a>
@@ -55,6 +72,21 @@
 
                 <dt>Repository</dt>
                 <dd><a href="{{ base_url }}/repos/{{ adr.repository_name }}.html">{{ adr.repository_name }}</a></dd>
+
+                {{ if adr.is_from_pull_request }}
+                <dt>Pull Request</dt>
+                <dd>
+                    <a href="{{ adr.pull_request_url }}" target="_blank" rel="noopener">
+                        PR #{{ adr.pull_request_number }}
+                    </a>
+                </dd>
+
+                <dt>PR Title</dt>
+                <dd>{{ adr.pull_request_title }}</dd>
+
+                <dt>Author</dt>
+                <dd>{{ adr.pull_request_author }}</dd>
+                {{ end }}
 
                 {{ if adr.supersedes_id }}
                 <dt>Supersedes</dt>

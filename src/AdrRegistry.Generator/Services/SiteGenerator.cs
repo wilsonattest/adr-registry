@@ -100,6 +100,8 @@ public class SiteGenerator
             repository_count = index.RepositoryCount,
             adrs_by_status = index.AdrsByStatus,
             recent_adrs = index.RecentAdrs,
+            proposed_adrs = index.ProposedAdrs,
+            proposed_adr_count = index.ProposedAdrCount,
             repositories = index.Repositories.OrderBy(r => r.Name).ToList()
         });
 
@@ -659,6 +661,67 @@ public class SiteGenerator
             /* Search */
             #search {
                 margin-bottom: 1rem;
+            }
+
+            /* Proposed ADRs (from Pull Requests) */
+            .adr-card-proposed {
+                border-left: 4px solid var(--color-warning);
+                background: linear-gradient(to right, rgba(245, 158, 11, 0.05), transparent);
+            }
+
+            .adr-detail-proposed {
+                border-top: 4px solid var(--color-warning);
+            }
+
+            .pr-banner {
+                background: #fef3c7;
+                border: 1px solid #f59e0b;
+                border-radius: var(--radius);
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                color: #92400e;
+            }
+
+            .pr-banner a {
+                color: #92400e;
+                font-weight: 600;
+            }
+
+            .pr-link {
+                font-size: 0.875rem;
+                color: var(--color-text-muted);
+                text-decoration: none;
+            }
+
+            .pr-link:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+
+            .adr-author {
+                font-style: italic;
+            }
+
+            .section-proposed {
+                background: linear-gradient(to bottom, rgba(245, 158, 11, 0.05), transparent);
+                border-radius: var(--radius);
+                padding: 1.5rem;
+                margin-left: -1.5rem;
+                margin-right: -1.5rem;
+            }
+
+            .section-proposed h2 {
+                color: #92400e;
+            }
+
+            .adr-actions {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+
+            .btn-primary:hover {
+                background: #1d4ed8;
             }
             """;
     }

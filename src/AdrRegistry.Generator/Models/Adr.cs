@@ -89,4 +89,36 @@ public class Adr
     /// The ID of the ADR that superseded this one, if any.
     /// </summary>
     public string? SupersededById { get; set; }
+
+    // Pull Request properties
+
+    /// <summary>
+    /// Whether this ADR comes from an open pull request.
+    /// </summary>
+    public bool IsFromPullRequest { get; set; } = false;
+
+    /// <summary>
+    /// The pull request number, if from a PR.
+    /// </summary>
+    public int? PullRequestNumber { get; set; }
+
+    /// <summary>
+    /// The pull request title, if from a PR.
+    /// </summary>
+    public string? PullRequestTitle { get; set; }
+
+    /// <summary>
+    /// The URL to the pull request, if from a PR.
+    /// </summary>
+    public string? PullRequestUrl { get; set; }
+
+    /// <summary>
+    /// The author of the pull request, if from a PR.
+    /// </summary>
+    public string? PullRequestAuthor { get; set; }
+
+    /// <summary>
+    /// The source branch of the pull request, if from a PR.
+    /// </summary>
+    public string? SourceBranch { get; set; }
 }

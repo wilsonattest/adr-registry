@@ -38,11 +38,36 @@ public class AdrIndex
         .ToDictionary(g => g.Key, g => g.Count());
 
     /// <summary>
-    /// Most recently updated ADRs.
+    /// Most recently updated ADRs (merged only).
     /// </summary>
     public List<Adr> RecentAdrs => Adrs
-        .Where(a => a.Date.HasValue)
+        .Where(a => a.Date.HasValue && !a.IsFromPullRequest)
         .OrderByDescending(a => a.Date)
         .Take(10)
         .ToList();
+
+    /// <summary>
+    /// ADRs from open pull requests.
+    /// </summary>
+    public List<Adr> ProposedAdrs => Adrs
+        .Where(a => a.IsFromPullRequest)
+        .OrderByDescending(a => a.PullRequestNumber)
+        .ToList();
+
+    /// <summary>
+    /// ADRs that have been merged (not from PRs).
+    /// </summary>
+    public List<Adr> MergedAdrs => Adrs
+        .Where(a => !a.IsFromPullRequest)
+        .ToList();
+
+    /// <summary>
+    /// Count of proposed ADRs in PRs.
+    /// </summary>
+    public int ProposedAdrCount => ProposedAdrs.Count;
+
+    /// <summary>
+    /// Count of merged ADRs.
+    /// </summary>
+    public int MergedAdrCount => MergedAdrs.Count;
 }

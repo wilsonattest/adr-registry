@@ -126,8 +126,156 @@ public class GitHubService
             await Task.Delay(100, ct);
         }
 
-        Console.WriteLine($"\nTotal: {index.TotalAdrCount} ADRs across {index.RepositoryCount} repositories");
+        // Fetch ADRs from open pull requests
+        Console.WriteLine("\nScanning for ADRs in open pull requests...");
+        foreach (var repo in repositories)
+        {
+            try
+            {
+                var prAdrs = await GetAdrsFromPullRequestsAsync(repo, ct);
+                if (prAdrs.Count > 0)
+                {
+                    index.Adrs.AddRange(prAdrs);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  Warning: Failed to scan PRs for {repo.FullName}: {ex.Message}");
+            }
+
+            await Task.Delay(100, ct);
+        }
+
+        Console.WriteLine($"\nTotal: {index.MergedAdrCount} merged ADRs, {index.ProposedAdrCount} proposed ADRs across {index.RepositoryCount} repositories");
         return index;
+    }
+
+    /// <summary>
+    /// Gets open pull requests that contain ADR changes.
+    /// </summary>
+    public async Task<List<PullRequestInfo>> GetOpenPullRequestsWithAdrsAsync(Repository repo, CancellationToken ct = default)
+    {
+        var result = new List<PullRequestInfo>();
+
+        try
+        {
+            var owner = repo.FullName.Split('/')[0];
+            var repoName = repo.FullName.Split('/')[1];
+
+            var prs = await _client.PullRequest.GetAllForRepository(
+                owner,
+                repoName,
+                new PullRequestRequest { State = ItemStateFilter.Open });
+
+            foreach (var pr in prs)
+            {
+                try
+                {
+                    var files = await _client.PullRequest.Files(owner, repoName, pr.Number);
+
+                    var adrFiles = files
+                        .Where(f => f.FileName.StartsWith(_config.AdrPath, StringComparison.OrdinalIgnoreCase))
+                        .Where(f => f.FileName.EndsWith(".md", StringComparison.OrdinalIgnoreCase))
+                        .Where(f => !f.FileName.EndsWith("0000-template.md", StringComparison.OrdinalIgnoreCase))
+                        .Where(f => f.Status != "removed")
+                        .Select(f => f.FileName)
+                        .ToList();
+
+                    if (adrFiles.Count > 0)
+                    {
+                        result.Add(new PullRequestInfo
+                        {
+                            Number = pr.Number,
+                            Title = pr.Title,
+                            Url = pr.HtmlUrl,
+                            Author = pr.User?.Login ?? "unknown",
+                            SourceBranch = pr.Head.Ref,
+                            RepositoryFullName = repo.FullName,
+                            AdrFiles = adrFiles
+                        });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"    Warning: Failed to get files for PR #{pr.Number}: {ex.Message}");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"  Warning: Failed to fetch PRs for {repo.FullName}: {ex.Message}");
+        }
+
+        return result;
+    }
+
+    /// <summary>
+    /// Gets ADR content from a pull request branch.
+    /// </summary>
+    public async Task<Adr?> GetAdrFromPullRequestAsync(Repository repo, PullRequestInfo pr, string filePath, CancellationToken ct = default)
+    {
+        try
+        {
+            var owner = repo.FullName.Split('/')[0];
+            var repoName = repo.FullName.Split('/')[1];
+
+            var contentBytes = await _client.Repository.Content.GetRawContentByRef(
+                owner,
+                repoName,
+                filePath,
+                pr.SourceBranch);
+
+            var markdown = Encoding.UTF8.GetString(contentBytes);
+            var fileName = Path.GetFileName(filePath);
+            var githubUrl = $"https://github.com/{repo.FullName}/blob/{pr.SourceBranch}/{filePath}";
+
+            var adr = _parser.Parse(markdown, repo, filePath, fileName, githubUrl);
+
+            // Mark as PR ADR and add PR metadata
+            adr.IsFromPullRequest = true;
+            adr.PullRequestNumber = pr.Number;
+            adr.PullRequestTitle = pr.Title;
+            adr.PullRequestUrl = pr.Url;
+            adr.PullRequestAuthor = pr.Author;
+            adr.SourceBranch = pr.SourceBranch;
+
+            // Append PR info to ID to avoid conflicts with merged ADRs
+            adr.Id = $"{adr.Id}_pr{pr.Number}";
+
+            return adr;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"    Warning: Failed to fetch ADR from PR #{pr.Number}: {ex.Message}");
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Gets all ADRs from open pull requests for a repository.
+    /// </summary>
+    public async Task<List<Adr>> GetAdrsFromPullRequestsAsync(Repository repo, CancellationToken ct = default)
+    {
+        var adrs = new List<Adr>();
+
+        var prs = await GetOpenPullRequestsWithAdrsAsync(repo, ct);
+
+        foreach (var pr in prs)
+        {
+            Console.WriteLine($"  PR #{pr.Number} in {repo.Name}: {pr.Title}");
+
+            foreach (var filePath in pr.AdrFiles)
+            {
+                var adr = await GetAdrFromPullRequestAsync(repo, pr, filePath, ct);
+                if (adr != null)
+                {
+                    adrs.Add(adr);
+                    Console.WriteLine($"    Found: {adr.Title}");
+                }
+            }
+        }
+
+        return adrs;
     }
 
     private bool IsExcluded(string repoFullName)
