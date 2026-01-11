@@ -2,8 +2,10 @@ name: Build ADR Registry
 
 on:
   schedule:
-    - cron: '0 * * * *'           # Every hour
+    - cron: '0 */6 * * *'         # Every 6 hours (backup sync)
   workflow_dispatch:               # Manual trigger
+  repository_dispatch:             # Triggered by other repos
+    types: [adr-updated]
   push:
     branches: [main]
     paths: ['config/**', 'src/**'] # Rebuild on config or code changes
@@ -56,7 +58,7 @@ jobs:
           node-version: '20'
 
       - name: Build Search Index
-        run: npx pagefind@latest --site docs
+        run: npx pagefind@latest --site docs --output-path docs/search
 
       - name: Clean up private key
         if: always()
