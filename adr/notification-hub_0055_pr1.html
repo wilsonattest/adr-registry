@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt WebSockets for Real-time Notifications - Architecture Decision Records</title>
+    <meta name="description" content="Cross-project ADR registry for wilsonattest">
+    <link rel="stylesheet" href="/adr-registry/css/style.css">
+    <link href="/adr-registry/search/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/adr-registry/" class="nav-brand">Architecture Decision Records</a>
+                <ul class="nav-links">
+                    <li><a href="/adr-registry/">Dashboard</a></li>
+                    <li><a href="/adr-registry/adrs/">All ADRs</a></li>
+                    <li><a href="/adr-registry/repos/">Repositories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <article class="adr-detail adr-detail-proposed" data-pagefind-body>
+                <span data-pagefind-filter="status:Proposed"></span>
+                <span data-pagefind-filter="repo:notification-hub"></span>
+                <span data-pagefind-filter="source:Proposed"></span>
+                <span data-pagefind-meta="status:Proposed"></span>
+                <span data-pagefind-meta="repo:notification-hub"></span>
+            
+                
+                    <div class="pr-banner">
+                        <strong>Proposed ADR</strong> - This ADR is from an open pull request and has not been merged yet.
+                        <a href="https://github.com/wilsonattest/notification-hub/pull/1" target="_blank" rel="noopener">View PR #1</a>
+                    </div>
+                    
+            
+                <nav class="breadcrumb">
+                    <a href="/adr-registry/">Home</a> /
+                    <a href="/adr-registry/repos/notification-hub.html">notification-hub</a> /
+                    <span>ADR-0055</span>
+                </nav>
+            
+                <header class="adr-detail-header">
+                    <div class="adr-detail-meta">
+                        
+                                    <span class="badge badge-proposed">Proposed</span>
+                                    
+                        
+                                    <span class="adr-date">2026-01-11</span>
+                                    
+                    </div>
+                    <h1>Adopt WebSockets for Real-time Notifications</h1>
+                    <div class="adr-actions">
+                        
+                                    <a href="https://github.com/wilsonattest/notification-hub/pull/1" class="btn btn-primary" target="_blank" rel="noopener">
+                                        View Pull Request
+                                    </a>
+                                    
+                        <a href="" class="btn btn-secondary" target="_blank" rel="noopener">
+                            View on GitHub
+                        </a>
+                    </div>
+                </header>
+            
+                <div class="adr-detail-body">
+                    <div class="adr-content">
+                        <h2 id="context">Context</h2>
+                        <p>Our current notification delivery system relies on polling mechanisms where clients check for new notifications every 30 seconds. This approach has several limitations:</p>
+                        <ul>
+                        <li>Increased server load from frequent polling requests</li>
+                        <li>Delayed notification delivery (up to 30 seconds latency)</li>
+                        <li>Poor user experience for time-sensitive notifications</li>
+                        <li>Inefficient battery and bandwidth usage on mobile devices</li>
+                        </ul>
+                        <p>Users have reported that notifications for critical events (payment confirmations, security alerts) arrive too slowly compared to competitor applications.</p>
+                        <h2 id="decision">Decision</h2>
+                        <p>We will implement WebSocket connections for real-time notification delivery. The implementation will include:</p>
+                        <ol>
+                        <li><strong>WebSocket Gateway</strong> - A dedicated service handling persistent connections</li>
+                        <li><strong>Connection Management</strong> - Track active connections per user/device</li>
+                        <li><strong>Fallback Mechanism</strong> - Graceful degradation to SSE or polling when WebSockets are unavailable</li>
+                        <li><strong>Heartbeat Protocol</strong> - Keep-alive mechanism to detect stale connections</li>
+                        </ol>
+                        <p>We will use the Socket.IO library to handle cross-browser compatibility and automatic reconnection.</p>
+                        <h2 id="consequences">Consequences</h2>
+                        <h3 id="positive">Positive</h3>
+                        <ul>
+                        <li>Sub-second notification delivery for connected clients</li>
+                        <li>Reduced server load (fewer HTTP requests)</li>
+                        <li>Better user experience for real-time features</li>
+                        <li>Foundation for future real-time features (typing indicators, presence)</li>
+                        </ul>
+                        <h3 id="negative">Negative</h3>
+                        <ul>
+                        <li>Increased infrastructure complexity (stateful connections)</li>
+                        <li>Need for sticky sessions or Redis pub/sub for horizontal scaling</li>
+                        <li>Additional monitoring requirements for connection health</li>
+                        <li>Higher memory usage per connected client</li>
+                        </ul>
+                        <h3 id="neutral">Neutral</h3>
+                        <ul>
+                        <li>Requires updates to mobile SDKs</li>
+                        <li>May need to adjust firewall rules for WebSocket traffic</li>
+                        </ul>
+            
+                    </div>
+            
+                    <aside class="adr-sidebar">
+                        <h3>Metadata</h3>
+                        <dl>
+                            <dt>Number</dt>
+                            <dd>ADR-0055</dd>
+            
+                            <dt>Status</dt>
+                            <dd><span class="badge badge-proposed">Proposed</span></dd>
+            
+                            
+                                            <dt>Date</dt>
+                                            <dd>2026-01-11</dd>
+                                            
+            
+                            
+                                            <dt>Deciders</dt>
+                                            <dd>
+                                                
+                                                    <span class="decider">Sarah Chen</span>, 
+                                                    
+                                                    <span class="decider">Marcus Johnson</span>
+                                                    
+                                            </dd>
+                                            
+            
+                            <dt>Repository</dt>
+                            <dd><a href="/adr-registry/repos/notification-hub.html">notification-hub</a></dd>
+            
+                            
+                                            <dt>Pull Request</dt>
+                                            <dd>
+                                                <a href="https://github.com/wilsonattest/notification-hub/pull/1" target="_blank" rel="noopener">
+                                                    PR #1
+                                                </a>
+                                            </dd>
+                            
+                                            <dt>PR Title</dt>
+                                            <dd>Propose websockets for real-time notifications</dd>
+                            
+                                            <dt>Author</dt>
+                                            <dd>wilsonat</dd>
+                                            
+            
+                            
+            
+                            
+                        </dl>
+                    </aside>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated on 2026-01-12 01:25 UTC</p>
+            <p>Powered by <a href="https://github.com/anthropics/claude-code">Claude Code</a></p>
+        </div>
+    </footer>
+
+    <script src="/adr-registry/search/pagefind-ui.js"></script>
+    <script src="/adr-registry/js/app.js"></script>
+</body>
+</html>
